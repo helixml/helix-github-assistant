@@ -4,7 +4,7 @@ A Helix-powered app that enables natural language interaction with GitHub Issues
 
 ## Quick Start
 
-bash
+`bash`
 
 Clone the repository
 
@@ -14,10 +14,13 @@ cd helix-github-assistant
 
 
 Set up environment variables
+`env`
 
 export GITHUB_OWNER=your_github_username
 export GITHUB_API_TOKEN=your_github_token
 export HELIX_API_KEY=your_helix_api_key
+
+`bash`
 
 Deploy
 ./deploy.sh
@@ -48,7 +51,7 @@ Deploy
 
 ### Environment Setup
 
-bash
+`env`
 
 Set environment variables
 
@@ -66,6 +69,7 @@ echo $HELIX_API_KEY
 ### Assistant Configuration
 
 Copy this into helix.yaml:
+`yaml`
 
 piVersion: app.aispec.org/v1alpha1
 kind: AIApp
@@ -119,7 +123,7 @@ url: https://api.github.com
 
 ### Testing Your Setup
 
-bash
+`bash`
 
 Test configuration
 
