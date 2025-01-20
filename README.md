@@ -4,8 +4,6 @@ A Helix-powered app that enables natural language interaction with GitHub Issues
 
 ## Quick Start
 
-
-
 Clone the repository
 ```
 
@@ -14,20 +12,6 @@ git clone https://github.com/helixml/helix-github-assistant.git
 ```
 
 cd helix-github-assistant
-
-
-Set up environment variables
-```
-
-export GITHUB_OWNER=your_github_username
-export GITHUB_API_TOKEN=your_github_token
-export HELIX_API_KEY=your_helix_api_key
-
-```
-
-Deploy
-./deploy.sh
-
 
 
 ## Installation
@@ -71,10 +55,14 @@ echo $HELIX_API_KEY
 
 ```
 
+Deploy
+```
+./deploy.sh
+```
 
 ### Assistant Configuration
 
-Copy this into helix.yaml:
+Create a helix.yaml file. Copy and paste configuration:
 ```
 
 piVersion: app.aispec.org/v1alpha1
@@ -135,6 +123,16 @@ Test configuration
 ```
 helix test -f helix.yaml
 ```
+
+### Step 7: Try It Out
+
+1. Go to app.tryhelix.ai
+2. Find your GitHub Issues assistant in Apps
+3. Click launch
+4. Try these queries:
+   - "Show me open issues in helixml/helix repository"
+   - "List closed issues from last week"
+   - "Show issues labeled bug"
 
 ## Contributing
 
