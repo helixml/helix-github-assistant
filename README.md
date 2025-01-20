@@ -4,23 +4,26 @@ A Helix-powered app that enables natural language interaction with GitHub Issues
 
 ## Quick Start
 
-`bash`
+
 
 Clone the repository
+```
 
 git clone https://github.com/helixml/helix-github-assistant.git
+
+```
 
 cd helix-github-assistant
 
 
 Set up environment variables
-`env`
+```
 
 export GITHUB_OWNER=your_github_username
 export GITHUB_API_TOKEN=your_github_token
 export HELIX_API_KEY=your_helix_api_key
 
-`bash`
+```
 
 Deploy
 ./deploy.sh
@@ -51,25 +54,28 @@ Deploy
 
 ### Environment Setup
 
-`env`
 
 Set environment variables
-
+```
 export GITHUB_OWNER=your_github_username
 export GITHUB_API_TOKEN=your_github_token
 export HELIX_API_KEY=your_helix_api_key
+```
 
 Verify they're set
+```
 
 echo $GITHUB_OWNER
 echo $GITHUB_API_TOKEN
 echo $HELIX_API_KEY
 
+```
+
 
 ### Assistant Configuration
 
 Copy this into helix.yaml:
-`yaml`
+```
 
 piVersion: app.aispec.org/v1alpha1
 kind: AIApp
@@ -120,14 +126,15 @@ responses:
 '200':
 description: List of issues
 url: https://api.github.com
+```
 
 ### Testing Your Setup
 
-`bash`
 
 Test configuration
-
+```
 helix test -f helix.yaml
+```
 
 ## Contributing
 
