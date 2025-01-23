@@ -11,8 +11,9 @@ git clone https://github.com/helixml/helix-github-assistant.git
 
 ```
 
+```
 cd helix-github-assistant
-
+```
 
 ## Installation
 
